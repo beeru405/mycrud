@@ -67,7 +67,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
             // Checking for empty roll number
             if(Rollno.getText().toString().trim().length()==0)
             {
-                showMessage("Error", "Please enter Rollno");
+                showMessage("Error", "Please Rollno");
                 return;
             }
             Cursor c=db.rawQuery("SELECT * FROM student WHERE rollno='"+Rollno.getText()+"'", null);
